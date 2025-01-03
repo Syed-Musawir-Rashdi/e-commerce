@@ -18,7 +18,7 @@ function Product() {
                     <Grid container spacing={2}>
               {products?.map((product) => {
                 return (
-                  <Grid size={{ xs: 6, md: 3 }}>
+                  <Grid size={{ xs: 12, md: 3 }}>
                     <Card className="p-3">
                       <div>
                         <div className="text-center">
