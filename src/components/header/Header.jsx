@@ -16,8 +16,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-
-import Product from "../products/Product";
+import { Outlet } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
@@ -100,9 +99,8 @@ const Header = () => {
         </nav>
         <Box component="main" sx={{ p: 3 }}>
           <Toolbar />
-          <Typography variant="h3" className="my-3">Products:</Typography>
           <Box>
-            <Product/>
+            <Outlet/>
           </Box>
         </Box>
       </Box>
